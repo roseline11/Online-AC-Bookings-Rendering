@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+input[type=text] {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=number] {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 25%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+body {
+  background-image: url('pay.jpg');
+background-size:cover;
+}
+</style>
+</head>
+<body align="center">
+<form action="payval.php"  method="POST">           
+ <h1>Payment</h1>
+            <label for="cardname" >Name on Card</label>
+            <input type="text" placeholder="cname" name="cardname" required >
+            <label for="cardnumber" >Credit card number</label>
+            <input type="number"  placeholder="ccnum" name="cardnumber" required >
+            <label for="expmonth" >Exp Month</label>
+            <input type="text" placeholder="expmonth" name="expmonth" required>
+                <label for="expyear">Exp Year</label>
+                <input type="text"  placeholder="expyear" name="expyear" required>
+                <label for="cvv">CVV</label>
+                <input type="number"  placeholder="cvv" name="cvv" required >
+            <br>
+       
+
+    <button type="submit" value="Submit" class="button">DONE</button></a>
+    </form>
+</body>
+</html>

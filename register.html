@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+input[type=text] {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=email] {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=password] {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=number] {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 18%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+body {
+  background-image: url('rr.jpg');
+background-size:cover;
+}
+
+</style>
+</head>
+<body >
+<form  method="POST" action="reg1.php">           
+ <h1>Register</h1>
+            <label for="fname" >FirstName</label>
+            <input type="text" placeholder="fname" name="name" required>
+            <label for="lname" >LastName</label>
+            <input type="text"  placeholder="lname" name="lname" required>
+            <label for="Email" >Email</label>
+            <input type="email" placeholder="Email" name="email" required >
+          
+                <label for="Password">Password</label>
+                <input type="password"  placeholder="password" name="password" required >
+            
+                <label for="number">PhoneNumber</label>
+                <input type="number"  placeholder="phone" name="number" required ><br>
+            
+        
+    <br>
+		<button type="submit" value="Submit" class="button">Register</button></a>
+     
+</form>
+<b>ALREADY REGISTERED <a href="login.html">LOGIN</a></b>
+</body>
+</html>
